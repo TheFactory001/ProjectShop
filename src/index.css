@@ -24,3 +24,10 @@ code {
 .fs-12{
   font-size: 12px;
 }
+.pos-abs{
+  position: absolute;
+}
+
+.ml-5{
+  margin-left: 10px;
+}

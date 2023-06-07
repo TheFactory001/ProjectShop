@@ -11,12 +11,15 @@ const NavBar = () => {
         <li className="pointer-cursor nav-hov-black">DEALS</li>
       </ul>
       <div className="nav-item nav-item-group-2 nav-search">
-        <input type="text" className='nav-search-input' placeholder='Search' />
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type= "text" className='nav-search-input' placeholder='Search' />
+        <div className="search-icon-container pos-abs ml-5">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        
       </div>
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor">Sign in</li>
-        <li className="pointer-cursor">Cart</li>
+        <li className= "user-profile pointer-cursor"><i class="fa-solid fa-cart-shopping"></i>Sign in</li>
+        <li className="pointer-cursor"><i class="fa-solid fa-cart-shopping"></i></li>
       </ul>
     </div>
     
