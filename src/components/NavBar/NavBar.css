@@ -18,3 +18,16 @@
 .nav-hov-black:hover{
     border-bottom: 2px solid black;
 }
+.nav-search {
+    width: 200px;
+}
+
+.nav-search-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 8px 40px;
+    cursor: text;
+    border: none;
+    
+}
