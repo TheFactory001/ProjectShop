@@ -1,5 +1,6 @@
 import './App.css';
-import NavBar from './components/NavBar';
+
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
      
        <NavBar/>
+       
         <p>
           The Factory annual project is a go!
         </p>

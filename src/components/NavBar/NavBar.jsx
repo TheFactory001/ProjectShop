@@ -1,4 +1,5 @@
 import React from 'react'
+import './NavBar.css'
 
 const NavBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
         <li>Deals</li>
       </ul>
       <div className="nav-item nav-item-group-2 nav-search">Search</div>
-      <ul className="nav-item nav-item-group-3">
+      <ul className="nav-item nav-list nav-item-group-3">
         <li className= "user-profile">Sign in</li>
         <li>Cart</li>
       </ul>
