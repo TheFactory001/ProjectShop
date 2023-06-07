@@ -18,7 +18,7 @@ const NavBar = () => {
         
       </div>
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor"><i class="fa-solid fa-cart-shopping"></i>Sign in</li>
+        <li className= "user-profile pointer-cursor"><i class="fa-regular fa-user mr-20"></i>Sign in</li>
         <li className="pointer-cursor"><i class="fa-solid fa-cart-shopping"></i></li>
       </ul>
     </div>

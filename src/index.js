@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fontawesome/css/fontawesome.css'
 import './fontawesome/css/solid.css'
+import './fontawesome/css/regular.css'
 import './fontawesome/css/brands.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
