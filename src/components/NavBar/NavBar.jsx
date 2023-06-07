@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './NavBar.css'
 
 const NavBar = () => {
+  [searchItem, setSearchItem]=useState("")
   return (
     <>
     <div className="nav-container">
@@ -11,7 +12,7 @@ const NavBar = () => {
         <li className="pointer-cursor nav-hov-black">DEALS</li>
       </ul>
       <div className="nav-item nav-item-group-2 nav-search">
-        <input type= "text" className='nav-search-input' placeholder='Search' />
+        <input type= "text" className='nav-search-input' placeholder='Search'/>
         <div className="search-icon-container pos-abs ml-5">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
