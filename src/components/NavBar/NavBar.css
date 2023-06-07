@@ -11,3 +11,10 @@
     display: flex;
     gap: 100px
 }
+.pointer-cursor:hover{
+    cursor: pointer;
+ 
+}
+.nav-hov-black:hover{
+    border-bottom: 2px solid black;
+}
