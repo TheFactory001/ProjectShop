@@ -12,6 +12,7 @@ const NavBar = () => {
       </ul>
       <div className="nav-item nav-item-group-2 nav-search">
         <input type="text" className='nav-search-input' placeholder='Search' />
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <ul className="nav-item nav-list nav-item-group-3">
         <li className= "user-profile pointer-cursor">Sign in</li>
