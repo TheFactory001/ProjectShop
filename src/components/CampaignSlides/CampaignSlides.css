@@ -1,6 +1,5 @@
 .landingGif {
-    height: 145px;
+    height: 100px;
     width: 100%;
-    margin-top: 1%;
     object-fit: 'cover'
   }

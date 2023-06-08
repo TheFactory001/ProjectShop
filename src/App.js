@@ -9,11 +9,9 @@ function App() {
     <div className="App">
        <NavBar/>
        <CampaignSlides/>
-       
-        <p>
-          The Factory annual project is a go!
-        </p>
-     
+      <p>
+        The Factory annual project is a go!
+      </p>
     </div>
   );
 }
