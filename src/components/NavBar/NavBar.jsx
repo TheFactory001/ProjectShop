@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './NavBar.css'
+import { isVisible } from '@testing-library/user-event/dist/utils'
 
 const NavBar = () => {
-  [searchItem, setSearchItem]=useState("")
+  const [searchItem, setSearchItem]=useState("")
+  const ref =useRef(null)
+  
   return (
     <>
     <div className="nav-container">
@@ -11,16 +14,36 @@ const NavBar = () => {
         <li className="pointer-cursor nav-hov-black">SELL</li>
         <li className="pointer-cursor nav-hov-black">DEALS</li>
       </ul>
-      <div className="nav-item nav-item-group-2 nav-search">
-        <input type= "text" className='nav-search-input' placeholder='Search'/>
-        <div className="search-icon-container pos-abs ml-5">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <form className="nav-item nav-item-group-2 nav-search" onSubmit={(e)=>{
+        e.preventDefault()
+        console.log(searchItem)
+      }}>
+        <input  className='nav-search-input' placeholder='Search' ref={ref}
+        onInput={(e)=>setSearchItem(e.currentTarget.value)}
+       />
+        <div className="search-icon-container pos-abs ml-5" onClick={()=>{
+          console.log(searchItem)
+        }}>
+          <i className="fa-solid fa-magnifying-glass search-icon"></i>
+          
+        </div>
+        <div className="cancel-search-container pos-abs mr-5">
+          {/* cancel button */}
+          {
+            // only show on input and clear input box on click
+            searchItem?<i className="fa-solid fa-times cancel-search-icon" onClick={(e)=>{
+              ref.current.value=""
+              setSearchItem("")}} ></i>:null
+          }
+          
+          
+          
         </div>
         
-      </div>
+      </form>
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor"><i class="fa-regular fa-user mr-20"></i>Sign in</li>
-        <li className="pointer-cursor"><i class="fa-solid fa-cart-shopping"></i></li>
+        <li className= "user-profile pointer-cursor"><i className="fa-regular fa-user mr-20"></i>Sign in</li>
+        <li className="pointer-cursor"><i className="fa-solid fa-cart-shopping"></i></li>
       </ul>
     </div>
     

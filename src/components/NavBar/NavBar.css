@@ -33,3 +33,6 @@
     cursor: text;
     border: none;
 }
+.cancel-search-container{
+    margin-left: 175px;
+}
