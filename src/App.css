@@ -40,3 +40,10 @@
 ul{
   list-style: none;
 }
+
+.landingGif {
+  height: 145px;
+  width: 99%;
+  margin-top: 1%;
+  object-fit: 'cover'
+}
