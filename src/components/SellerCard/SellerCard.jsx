@@ -19,7 +19,13 @@ const SellerCard = ({seller_details}) => {
             </div>
             <div className="rating flex-8">
                 <p >Rating</p>
-                <p>****</p>
+                <div className="rate-icons">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star-half-stroke"></i>
+                    <i className="fa-solid fa-star-half-stroke"></i>
+                </div>
             </div>
             <div className="services">
                 <ul className='flex-btw'>
@@ -33,7 +39,7 @@ const SellerCard = ({seller_details}) => {
             </div>
             
             <div className="view-shop fw-700">
-                <p>View shop/catalog</p>
+                <p className='pointer-cursor'>View shop/catalog</p>
             </div>
 
 
