@@ -35,7 +35,7 @@ const NavBar = () => {
               ref.current.value=""
               setSearchItem("")}} ></i>:null
           }
-          
+  
           
           
         </div>
