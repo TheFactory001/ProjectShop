@@ -3,7 +3,8 @@ import './MarketBody.css'
 import SellerCard from '../SellerCard/SellerCard'
 
 const MarketBody = () => {
-    const demo_seller_details ={distant:5 ,user: {name:"Daniel", title:"Eunice's Clothing"}}
+    //demo seller details - should be passed from the main component
+    const demo_seller_details ={distant:5 ,user: {name:"Daniel", title:"Eunice's Clothing", customer_count:50}}
   return (
     <div className='pl-pr-50 mt-25 '>
         <div className='market-body p-25'>

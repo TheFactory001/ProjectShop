@@ -31,3 +31,15 @@ ul{
 .m-25{
   margin: 25px;
 }
+
+.flex-8{
+  display: flex;
+  gap: 8px;
+}
+.flex-btw{
+  display: flex;
+  justify-content: space-between;
+}
+.fw-700{
+  font-weight: 700;
+}
