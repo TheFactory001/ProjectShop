@@ -10,6 +10,8 @@ const MarketBody = () => {
         <div className='market-body p-25'>
             <div className='body-text opac-50'><p>Top shops around you</p></div>
             <SellerCard distant = "5km" seller_details={demo_seller_details} />
+            <div className="flex-center"><button className='enter-market-btn' >ENTER THE MARKET</button></div>
+            
         </div>
         
     </div>

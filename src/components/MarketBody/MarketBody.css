@@ -2,3 +2,11 @@
     height: 450px;
     background: rgba(245, 245, 245, 0.45)
 }
+.enter-market-btn{
+    height: 40px;
+    width: 225px;
+    outline: none;
+    border: none;
+    background: #d9d9d9;
+    margin-top: 25px;
+}
