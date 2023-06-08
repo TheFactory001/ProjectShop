@@ -12,10 +12,7 @@
     display: flex;
     gap: 100px
 }
-.pointer-cursor:hover{
-    cursor: pointer;
- 
-}
+
 .nav-hov-black:hover{
     border-bottom: 2px solid black;
 }
@@ -35,7 +32,4 @@
 }
 .cancel-search-container{
     margin-left: 175px;
-}
-.mt-25{
-    margin-top: 25px;
 }

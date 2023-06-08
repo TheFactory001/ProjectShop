@@ -1,9 +1,50 @@
 .bg-primary{
   background: #f5f5f5;
 }
+
 .flex-center{
   display: flex;
   justify-content: center;
+}
+
+.flex-8{
+  display: flex;
+  gap: 8px;
+}
+.flex-25{
+  display: flex;
+  gap: 25px;
+}
+.flex{
+  display: flex;
+}
+.flex-btw{
+  display: flex;
+  justify-content: space-between;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.mt-25{
+  margin-top: 25px;
+}
+
+.opac-50{
+  opacity: 0.50;
+}
+
+.m-25{
+  margin: 25px;
 }
 
 .pl-pr-50, .pr-pl-50{
@@ -21,29 +62,13 @@
 .p-25{
   padding: 25px;
 }
+.pointer-cursor:hover{
+  cursor: pointer;
+
+}
+
 ul{
   list-style: none;
 }
 
-.opac-50{
-  opacity: 0.50;
-}
-.m-25{
-  margin: 25px;
-}
 
-.flex-8{
-  display: flex;
-  gap: 8px;
-}
-.flex-btw{
-  display: flex;
-  justify-content: space-between;
-}
-.flex-center{
-  display: flex;
-  justify-content: center;
-}
-.fw-700{
-  font-weight: 700;
-}

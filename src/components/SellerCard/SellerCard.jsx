@@ -7,7 +7,7 @@ const SellerCard = ({seller_details}) => {
     
   return (
     <div className='m-25' >
-        <div className='seller-distance'><p>{seller_details.distant}km</p></div>
+        <div className='seller-distance fs-16'><p>{seller_details.distant}km</p></div>
         <div className='seller-card-profile'>
             <div className="shop-title flex-8 fw-700"><p>{seller_details.user.title}</p></div>
             <div className="img-customer">
