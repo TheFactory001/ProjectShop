@@ -14,3 +14,20 @@
     border: 0.5px solid black;
     font-weight: 700;
 }
+.seller-card-container{
+    display: flex;
+}
+@media only screen and (max-width:1240px){
+    .market-body{
+        height: auto;
+    }
+    .seller-card-container{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+    
+}

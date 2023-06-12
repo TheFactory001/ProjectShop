@@ -10,6 +10,13 @@
 }
 
 .landingGif {
-  width: 95%;
-  object-fit: cover;
-}
+    max-height: 100px;
+    width: 100%;
+    object-fit: 'cover';
+    height: auto;
+  }
+  @media only screen and (max-width:1024px){
+    .landingGif{
+      max-height: 50px;
+    }
+  }

@@ -10,7 +10,7 @@ const MarketBody = () => {
     <div className='pl-pr-50 mt-25 '>
         <div className='market-body p-25 '>
             <div className='body-text opac-50 fs-14'><p>Top shops around you</p></div>
-            <div className="flex">
+            <div className="seller-card-container">
 
             <SellerCard distant = "5km" seller_details={demo_seller_details_1} />
             <SellerCard distant = "5km" seller_details={demo_seller_details_2} />

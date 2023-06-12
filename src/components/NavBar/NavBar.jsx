@@ -10,7 +10,7 @@ const NavBar = () => {
   const toggleIconFill =()=>{
     setIsIconFill(!isIconFilled)
   }
-  // t
+  // show nav items and hide effect
   const [menuIconShown,setMenuIconShown] =useState("false")
 
   const toggleMenuIcon=()=>{
@@ -63,7 +63,7 @@ const NavBar = () => {
       <ul className="nav-item nav-list nav-item-group-3">
         <li className= "user-profile pointer-cursor" ><i className={"fa-regular fa-user"  } ></i><span className='ml-20'>Sign in</span></li>
         <li className="pointer-cursor"><i className="fa-solid fa-cart-shopping"></i></li>
-        <li className={`"pointer-cursor menu-bar"`}><i className={`fa-solid ${menuIconShown? "fa-bars":"fa-times"}`} onClick={()=>{
+        <li className={"pointer-cursor menu-bar"}><i className={`fa-solid ${menuIconShown? "fa-bars":"fa-times"}`} onClick={()=>{
           toggleMenuIcon()
         }}></i></li>
       </ul>
