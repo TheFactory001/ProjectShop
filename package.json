@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-alice-carousel": "^2.7.1",
     "react-icons": "^4.9.0",
     "styled-components": "^5.3.10"
   },
