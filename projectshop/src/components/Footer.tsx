@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Container = styled.div`
   /* width: 100%; */
-  height: 300px;
+  min-height: 250px;
   background: black;
   padding: 40px;
   font-family: sans-serif;
@@ -14,6 +14,7 @@ const SectionWrapper = styled.div`
   color: white;
   justify-content: center;
   gap: 100px;
+  flex-wrap: wrap;
 `;
 const FooterSection = styled.div``;
 const SectionHead = styled.h3`
