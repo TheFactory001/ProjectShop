@@ -6,7 +6,7 @@ const Container = styled.header`
   height: 60px;
 `;
 const NavWrapper = styled.nav`
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
@@ -15,6 +15,8 @@ const NavWrapper = styled.nav`
 const NavLogo = styled.div`
   flex: 1;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
 `;
 const NavCenter = styled.div`
   flex: 1;
@@ -65,7 +67,7 @@ const NavBar = () => {
   return (
     <Container>
       <NavWrapper>
-        <NavLogo>TH3FACT</NavLogo>
+        <NavLogo>TH3F4CT</NavLogo>
         <NavCenter>
           <CenterLinks>BUY</CenterLinks>
           <CenterLinks>SELL</CenterLinks>

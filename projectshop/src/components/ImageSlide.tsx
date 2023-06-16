@@ -12,16 +12,20 @@ const ImageWrapper = styled.div`
   width: 80%;
   height: 400px;
   position: relative;
+  max-width: 100%;
 `;
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
+  margin: 0 40px;
 `;
 
 const Image = styled.img`
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   object-fit: cover;
 `;
 const Text = styled.p`
@@ -40,6 +44,7 @@ const Arrow = styled.div<{ direction: string }>`
   align-items: center;
   border-radius: 50%;
   opacity: 50%;
+  z-index: 5;
 
   font-size: 24px;
   height: 40px;

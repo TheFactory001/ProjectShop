@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Announcements from "./components/Announcements";
 import ImageSlide from "./components/ImageSlide";
 import ShopCard from "./components/ShopCard";
+import ShopSection from "./components/ShopSection";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Announcements />
       <NavBar />
       <ImageSlide />
-      <ShopCard />
+      <ShopSection />
     </div>
   );
 }
