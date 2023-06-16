@@ -19,7 +19,7 @@ const InfoRectangle = styled.div`
   transition: all 1s ease;
 `;
 const ShopButton = styled.button`
-  width: 150px;
+  width: 180px;
   height: 40px;
   position: absolute;
   right: 20px;
@@ -32,6 +32,8 @@ const ShopButton = styled.button`
   z-index: 2;
   font-weight: 700;
   transition: all 1s ease;
+  cursor: pointer;
+  font-size: 24px;
 `;
 
 const Container = styled.div`

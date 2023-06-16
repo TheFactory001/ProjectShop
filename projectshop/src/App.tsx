@@ -6,6 +6,7 @@ import Announcements from "./components/Announcements";
 import ImageSlide from "./components/ImageSlide";
 import ShopCard from "./components/ShopCard";
 import ShopSection from "./components/ShopSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar />
       <ImageSlide />
       <ShopSection />
+      <Footer />
     </div>
   );
 }
