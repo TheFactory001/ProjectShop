@@ -11,9 +11,6 @@ function App() {
        <NavBar/>
        <CampaignSlides/>
        <MarketBody/>
-      <p>
-        The Factory annual project is a go!
-      </p>
     </div>
   );
 }

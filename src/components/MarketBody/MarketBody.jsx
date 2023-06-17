@@ -16,7 +16,7 @@ const MarketBody = () => {
             <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
             <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
             </div>
-            <div className="flex-center"><button className='enter-market-btn pointer-cursor' >ENTER THE MARKET</button></div>
+            <div className="flex-center"><button className='enter-market-btn pointer-cursor' >EXPLORE</button></div>
             
         </div>
         

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import './NavBar.css'
-import { isVisible } from '@testing-library/user-event/dist/utils'
 
 const NavBar = () => {
   const [searchItem, setSearchItem]=useState("")

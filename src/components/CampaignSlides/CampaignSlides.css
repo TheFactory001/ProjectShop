@@ -1,5 +1,15 @@
+
+.landingImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  max-width: 100%;
+  margin-top: 1%;
+}
+
 .landingGif {
-    height: 100px;
-    width: 100%;
-    object-fit: 'cover'
-  }
+  width: 95%;
+  object-fit: cover;
+}
