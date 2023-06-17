@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaFacebook, FaInstagram, FaMap } from "react-icons/fa";
 
 const Container = styled.div`
   /* width: 100%; */
@@ -8,6 +8,7 @@ const Container = styled.div`
   background: black;
   padding: 40px;
   font-family: sans-serif;
+  /* position: relative; */
 `;
 const SectionWrapper = styled.div`
   display: flex;
@@ -21,8 +22,8 @@ const SectionHead = styled.h3`
   margin-bottom: 20px;
   letter-spacing: 1.5px;
   font-weight: bold;
-  /* font-weight: 700;
-  font-size: 18px; */
+
+  font-size: 16px;
 `;
 const SectionItems = styled.ul`
   list-style: none;
@@ -35,9 +36,29 @@ const SectionItem = styled.li`
   align-items: center;
   cursor: pointer;
 `;
+const Location = styled.div`
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+`;
 const Text = styled.span``;
+const OtherSection = styled.div`
+  display: flex;
+  opacity: 50%;
+  color: #f5f5f5;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  ${Text} {
+    min-width: 300px;
+    text-align: center;
+    cursor: pointer;
+  }
+`;
+
 const Icon = styled.span`
-  font-size: 24px;
+  /*    */
   margin-right: 10px;
 `;
 const Footer = () => {
@@ -95,6 +116,17 @@ const Footer = () => {
           </SectionItems>
         </FooterSection>
       </SectionWrapper>
+      <Location>
+        <Icon>
+          <FaMap />
+        </Icon>
+        <Text>27 Zone 3, Wakajaiye, Ibadan, Nigeria</Text>
+      </Location>
+      <OtherSection>
+        <Text>&#169; TheFactory, Inc. All Rights Reserved</Text>
+        <Text>Terms of Use</Text>
+        <Text>Privacy and Cookie Policy</Text>
+      </OtherSection>
     </Container>
   );
 };

@@ -19,7 +19,7 @@ const InfoRectangle = styled.div`
   transition: all 1s ease;
 `;
 const ShopButton = styled.button`
-  width: 180px;
+  width: 150px;
   height: 40px;
   position: absolute;
   right: 20px;
@@ -33,7 +33,11 @@ const ShopButton = styled.button`
   font-weight: 700;
   transition: all 1s ease;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 16px;
+  &:hover {
+    outline: white solid 1px;
+    font-size: 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -90,7 +94,9 @@ const ProductsCategory = styled.div`
 const Product = styled.span`
   min-width: 80px;
 `;
-const ShopAd = styled.p``;
+const ShopAd = styled.p`
+  font-style: italic;
+`;
 
 interface Props {
   image: string;
