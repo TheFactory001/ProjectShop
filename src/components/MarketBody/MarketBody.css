@@ -1,5 +1,7 @@
 .market-body{
     height: 450px;
+    max-width: 100%;
+    width: 80%;
 }
 
 .enter-market-btn{
@@ -14,9 +16,11 @@
     border: 0.5px solid black;
     font-weight: 700;
 }
+
 .seller-card-container{
     display: flex;
 }
+
 @media only screen and (max-width:1240px){
     .market-body{
         height: auto;

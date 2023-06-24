@@ -3,7 +3,7 @@ import './NavBar.css'
 import { isVisible } from '@testing-library/user-event/dist/utils'
 import NavMarket from '../NavMarket/NavMarket'
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [searchItem, setSearchItem]=useState("")
   const ref =useRef(null)
   const[isIconFilled, setIsIconFill]=useState("False")
@@ -34,7 +34,7 @@ const NavBar = () => {
         e.preventDefault()
         console.log(searchItem)
       }}>
-        <input  className='nav-search-input' placeholder='Search' ref={ref}
+        <input  className='nav-search-input' placeholder={props.searchPlaceholder} ref={ref}
         onInput={(e)=>setSearchItem(e.currentTarget.value)}
         />
 
@@ -61,7 +61,10 @@ const NavBar = () => {
 
       {/* Right Items */}
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor" ><i className={"fa-regular fa-user"  } ></i><span className='ml-20'>Sign in</span></li>
+        <li className= "user-profile pointer-cursor">
+          <i className={"fa-regular fa-user"}></i>
+          {!props.isAuth && <span className='ml-20'>Sign in</span> }
+        </li>
         <li className="pointer-cursor"><i className="fa-solid fa-cart-shopping"></i></li>
         <li className={"pointer-cursor menu-bar"}><i className={`fa-solid ${menuIconShown? "fa-bars":"fa-times"}`} onClick={()=>{
           toggleMenuIcon()

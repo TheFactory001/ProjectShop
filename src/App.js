@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react'
+
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar';
@@ -7,9 +9,10 @@ import Footer from './components/Footer/Footer';
 
 
 function App() {
+  const [authState, setAuthState] = useState(false);
   return (
     <div className="App">
-       <NavBar/>
+       <NavBar searchPlaceholder="Search" isAuth={authState}/>
        <CampaignSlides/>
        <MarketBody/>
        <Footer/>
