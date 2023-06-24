@@ -1,15 +1,16 @@
 import React, { useRef, useState } from 'react'
 import './NavBar.css'
-import { isVisible } from '@testing-library/user-event/dist/utils'
-import NavMarket from '../NavMarket/NavMarket'
+
+import { NavLink } from 'react-router-dom';
+
 
 const NavBar = (props) => {
   const [searchItem, setSearchItem]=useState("")
   const ref =useRef(null)
-  const[isIconFilled, setIsIconFill]=useState("False")
-  const toggleIconFill =()=>{
-    setIsIconFill(!isIconFilled)
-  }
+  //const[isIconFilled, setIsIconFill]=useState("False")
+  //const toggleIconFill =()=>{
+   // setIsIconFill(!isIconFilled)
+  //}
   // show nav items and hide effect
   const [menuIconShown,setMenuIconShown] =useState("false")
 
@@ -24,7 +25,12 @@ const NavBar = (props) => {
 
       {/* First Set Items by left */}
       <ul className= {` nav-item nav-item-group-1 nav-list fw-400 fs-14 ${menuIconShown?"displ-none":null}`}>
-        <li className="pointer-cursor nav-hov-black">BUY</li>
+        <li className="pointer-cursor nav-hov-black">
+          <NavLink style={{ textDecoration: 'none', color: 'black'}} to="/"><h2>Shoppr</h2></NavLink>
+        </li>
+        <li className="pointer-cursor nav-hov-black">
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/buy"> BUY </NavLink>
+        </li>
         <li className="pointer-cursor nav-hov-black">SELL</li>
         <li className="pointer-cursor nav-hov-black">DEALS</li>
       </ul>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import './App.css';
 
@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 
 
 function App() {
-  const [authState, setAuthState] = useState(false);
+  const [authState] = useState(false);
   return (
     <div className="App">
        <NavBar searchPlaceholder="Search" isAuth={authState}/>
