@@ -9,7 +9,7 @@ const BuyPage = () => {
             <div className='buyPane'>
                 <h3>Explore departments</h3>
                 <div>
-                    Clothing & Jewellrey
+                    Clothing & Accessories
                     <div>
                         <p>M</p>
                         <p>F</p>
