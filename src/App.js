@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar';
@@ -9,11 +11,13 @@ import SignIn from './pages/SignIn';
 
 
 function App() {
+  const [authState] = useState(false);
   return (
     <div className="App">
-       <NavBar/>
-         <MarketBody/>
-         <Footer/>
+       <NavBar searchPlaceholder="Search" isAuth={authState}/>
+       <CampaignSlides/>
+       <MarketBody/>
+       <Footer/>
     </div>
   );
 }

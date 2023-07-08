@@ -14,6 +14,11 @@
     border:0.5px solid white  ;
     border-radius: 50px;
 }
+
+.sellerCard {
+    margin-right: 3%;
+}
+
 .img-customer{
     display: flex;
     height: 50%;

@@ -11,10 +11,10 @@ const MarketBody = () => {
         <div className='market-body p-25 '>
             <div className='body-text opac-50 fs-14'><p>Top shops around you</p></div>
             <div className="seller-card-container">
-
-            <SellerCard distant = "5km" seller_details={demo_seller_details_1} />
-            <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
-            <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
+              <SellerCard distant = "5km" seller_details={demo_seller_details_1} />
+              <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
+              <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
+              <SellerCard distant = "5km" seller_details={demo_seller_details_2} />
             </div>
             <div className="flex-center"><button className='enter-market-btn pointer-cursor' >EXPLORE</button></div>
             

@@ -7,11 +7,11 @@ const SellerCard = ({seller_details}) => {
     const unrate = 5-rate
     
   return (
-    <div className='m-25' >
+    <div className='sellerCard'>
         <div className='seller-distance fs-16'>
             <div className="cardInfo flex-8 fw-700">
                 <p>{seller_details.seller.title}</p>
-                <p>{seller_details.distant}km</p>
+                {seller_details.distant && <p>{seller_details.distant}km</p>}
             </div>
         </div>
         <div className='seller-card-profile'>

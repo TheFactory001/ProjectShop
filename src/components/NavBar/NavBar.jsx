@@ -1,15 +1,16 @@
 import React, { useRef, useState } from 'react'
 import './NavBar.css'
-import { isVisible } from '@testing-library/user-event/dist/utils'
-import NavMarket from '../NavMarket/NavMarket'
 
-const NavBar = () => {
+import { NavLink } from 'react-router-dom';
+
+
+const NavBar = (props) => {
   const [searchItem, setSearchItem]=useState("")
   const ref =useRef(null)
-  const[isIconFilled, setIsIconFill]=useState("False")
-  const toggleIconFill =()=>{
-    setIsIconFill(!isIconFilled)
-  }
+  //const[isIconFilled, setIsIconFill]=useState("False")
+  //const toggleIconFill =()=>{
+   // setIsIconFill(!isIconFilled)
+  //}
   // show nav items and hide effect
   const [menuIconShown,setMenuIconShown] =useState("false")
 
@@ -24,7 +25,12 @@ const NavBar = () => {
 
       {/* First Set Items by left */}
       <ul className= {` nav-item nav-item-group-1 nav-list fw-400 fs-14 ${menuIconShown?"displ-none":null}`}>
-        <li className="pointer-cursor nav-hov-black">BUY</li>
+        <li className="pointer-cursor nav-hov-black">
+          <NavLink style={{ textDecoration: 'none', color: 'black'}} to="/"><h2>Shoppr</h2></NavLink>
+        </li>
+        <li className="pointer-cursor nav-hov-black">
+          <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/buy"> BUY </NavLink>
+        </li>
         <li className="pointer-cursor nav-hov-black">SELL</li>
         <li className="pointer-cursor nav-hov-black">DEALS</li>
       </ul>
@@ -34,7 +40,7 @@ const NavBar = () => {
         e.preventDefault()
         console.log(searchItem)
       }}>
-        <input  className='nav-search-input' placeholder='Search' ref={ref}
+        <input  className='nav-search-input' placeholder={props.searchPlaceholder} ref={ref}
         onInput={(e)=>setSearchItem(e.currentTarget.value)}
         />
 
@@ -61,7 +67,10 @@ const NavBar = () => {
 
       {/* Right Items */}
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor" ><i className={"fa-regular fa-user"  } ></i><span className='ml-20'>Sign in</span></li>
+        <li className= "user-profile pointer-cursor">
+          <i className={"fa-regular fa-user"}></i>
+          {!props.isAuth && <span className='ml-20'>Sign in</span> }
+        </li>
         <li className="pointer-cursor"><i className="fa-solid fa-cart-shopping"></i></li>
         <li className={"pointer-cursor menu-bar"}><i className={`fa-solid ${menuIconShown? "fa-bars":"fa-times"}`} onClick={()=>{
           toggleMenuIcon()
