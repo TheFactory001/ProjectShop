@@ -8,7 +8,7 @@ const SignUp = () => {
   return (
     <>
     <NavBar searchPlaceholder="Search" isAuth={authState}/>
-    <SignInBody/>
+    <SignInBody2/>
     </>
   )
 }

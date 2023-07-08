@@ -5,7 +5,7 @@ import SignInBody from '../components/SignInBody/SignInBody'
 import SignInBody2 from '../components/SignInBody/SignInBody2'
 
 const SignIn = () => {
-  const isEmailReceived = useState(false)
+  const [isEmailReceived , setIsEmailReceived]= useState(false)
   const sendValdationCode=(email)=>{
     
     console.log('send code')
@@ -17,7 +17,7 @@ const SignIn = () => {
         <NavBar/>
         <div>
 
-        {isEmailReceived ? <SignInBody onSendCodeBtn={(email)=>{sendValdationCode(email)}}/> :<SignInBody2/>}
+        {isEmailReceived ?<SignInBody2/>: <SignInBody onSendCodeBtn={(email)=>{sendValdationCode(email)}}/>}
         </div>
         
        
