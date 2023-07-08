@@ -69,69 +69,72 @@ const Footer = () => {
   return (
 
     <div className="container">
-      <div className="section-wrapper">
-        <div className="footer-section">
-          <h3 className="section-head">COMPANY INFO</h3>
-          <ul className="section-items">
-            <li className="section-item">About Us</li>
-            <li className="section-item">Investors</li>
-            <li className="section-item">Other Ventures</li>
-            <li className="section-item">Careers</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3 className="section-head">GET HELP</h3>
-          <ul className="section-items">
-            <li className="section-item">Faqs</li>
-            <li className="section-item">Order Canellation</li>
-            <li className="section-item">Shipping & Delivery</li>
-            <li className="section-item">Return</li>
-            <li className="section-item">Contact Us</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3 className="section-head">JOIN US</h3>
-          <ul className="section-items">
-            <li className="section-item">Become a Seller</li>
-            <li className="section-item">Become a Tutor</li>
-            <li className="section-item">Bring Ideas</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3 className="section-head">FOLLOW US</h3 >
-          <ul className="section-items">
-            <li className="footer-section">
-              <span className="icon">
-                <FaFacebook />
-              </span>
-              <span>Facebook</span>
-            </li>
-            <li className="footer-section">
-              <span className="icon">
-                <FaInstagram />
-              </span>
-              <span>Instagram</span>
-            </li>
-            <li className="footer-section">
-              <span className="icon">
-                <FaTwitter />
-              </span>
-              <span>Twitter</span>
-            </li>
-          </ul>
-        </div>
-      </div >
-      <div className="location">
-        <span className="icon">
-          <FaMap />
-        </span>
-        <span>27 Zone 3, Wakajaiye, Ibadan, Nigeria</span>
-      </div >
-      <div className="other-section">
-        <span>&#169; TheFactory, Inc. All Rights Reserved</span>
-        <span>Terms of Use</span>
-        <span>Privacy and Cookie Policy</span>
-      </div >
+     
+
+        <div className="section-wrapper">
+          <div className="footer-section">
+            <h3 className="section-head">COMPANY INFO</h3>
+            <ul className="section-items">
+              <li className="section-item">About Us</li>
+              <li className="section-item">Investors</li>
+              <li className="section-item">Other Ventures</li>
+              <li className="section-item">Careers</li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3 className="section-head">GET HELP</h3>
+            <ul className="section-items">
+              <li className="section-item">Faqs</li>
+              <li className="section-item">Order Canellation</li>
+              <li className="section-item">Shipping & Delivery</li>
+              <li className="section-item">Return</li>
+              <li className="section-item">Contact Us</li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3 className="section-head">JOIN US</h3>
+            <ul className="section-items">
+              <li className="section-item">Become a Seller</li>
+              <li className="section-item">Become a Tutor</li>
+              <li className="section-item">Bring Ideas</li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3 className="section-head">FOLLOW US</h3 >
+            <ul className="section-items">
+              <li className="footer-section">
+                <span className="icon">
+                  <FaFacebook />
+                </span>
+                <span>Facebook</span>
+              </li>
+              <li className="footer-section">
+                <span className="icon">
+                  <FaInstagram />
+                </span>
+                <span>Instagram</span>
+              </li>
+              <li className="footer-section">
+                <span className="icon">
+                  <FaTwitter />
+                </span>
+                <span>Twitter</span>
+              </li>
+            </ul>
+          </div>
+        </div >
+        <div className="location">
+          <span className="icon">
+            <FaMap />
+          </span>
+          <span>27 Zone 3, Wakajaiye, Ibadan, Nigeria</span>
+        </div >
+        <div className="other-section">
+          <span>&#169; TheFactory, Inc. All Rights Reserved</span>
+          <span>Terms of Use</span>
+          <span>Privacy and Cookie Policy</span>
+        </div >
+   
     </div>
   );
 };

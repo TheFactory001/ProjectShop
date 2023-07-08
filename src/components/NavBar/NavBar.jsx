@@ -67,9 +67,13 @@ const NavBar = (props) => {
 
       {/* Right Items */}
       <ul className="nav-item nav-list nav-item-group-3">
-        <li className= "user-profile pointer-cursor">
-          <i className={"fa-regular fa-user"}></i>
-          {!props.isAuth && <span className='ml-20'>Sign in</span> }
+        <li className= "user-profile pointer-cursor"> 
+          <NavLink style={{ textDecoration: 'none', color: 'black'}} to={'/sign-up'}>
+              <i className={"fa-regular fa-user"}></i>
+              {/* the isAuth checks if a user is logged in, and it is set from the AppRouter App */}
+
+              {!props.isAuth && <span className='ml-20'>Sign in</span> }
+            </NavLink>
         </li>
         <li className="pointer-cursor"><i className="fa-solid fa-cart-shopping"></i></li>
         <li className={"pointer-cursor menu-bar"}><i className={`fa-solid ${menuIconShown? "fa-bars":"fa-times"}`} onClick={()=>{
