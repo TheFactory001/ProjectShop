@@ -6,7 +6,7 @@ import './BuyPage.css'
 
 const BuyPage = () => {
     const [authState] = useState(true);
-    const demo_seller_details_1 ={seller: {name:"Betha", title:"Betha's Hair",services:["Hairstyling", "Wigs", "Make-Up"], customer_count:50, rating:4.5}}
+    const demo_seller_details_1 ={seller: {name:"", title:"",services:["Hairstyling", "Wigs", "Make-Up"], customer_count:50, rating:4.5}}
     return (
         <div>
             <NavBar searchPlaceholder="Search departments" isAuth={authState}/>
