@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './SignInBody2.css'
+import './SignInBody.css'
 
 const SignInBody2 = () => {
    const password_ref= useRef(null)
@@ -27,7 +27,7 @@ const SignInBody2 = () => {
 
             <div className="btn-wrapper">
 
-           <button className="action-btn">Create Account</button>
+           <button className="action-btn" >Create Account</button>
             </div>
         </form>
         </div>

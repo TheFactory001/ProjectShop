@@ -13,8 +13,8 @@
 }
 .main-text{
     font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 20px;
+   
 }
 .input{
     width: 100%;
@@ -22,16 +22,23 @@
     border-radius: 10px;
     margin-top: 40px;
     
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
 }
+.inline-link{
+    cursor: pointer;
+    text-decoration: underline;
+}
 .policy-text{
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    margin-right: 40px;
+
     margin-top: 40px;
    
+}
+.policy-text p{
+    margin-right: 40px;
 }
 .policy-input{
     height: 24px;
@@ -58,4 +65,9 @@
 .action-btn:hover{
     background: #f5f5f5;
     color: black;
+}
+.newsletter{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }

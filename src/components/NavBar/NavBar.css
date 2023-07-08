@@ -32,6 +32,7 @@
     cursor: text;
     border: none;
 }
+
 .cancel-search-container{
     position:absolute;
     right: 5px;
