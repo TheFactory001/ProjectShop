@@ -1,0 +1,72 @@
+
+.exploreText {
+    margin-left: 1%;
+    font-weight: 500;
+}
+
+.buyPane {
+    margin-top: 2%;
+}
+
+.topBuyPane {
+    background: #F7F7F9;
+    padding: 1%;
+}
+
+.departments {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.departments h5 {
+    font-weight: 600;
+    height: 20px;
+}
+
+.departments h5:hover {
+    cursor: pointer;
+    border-bottom: solid black;
+}
+
+.department {
+    margin: 2%;
+}
+
+.department h5 {
+    font-weight: 600;
+    height: 20px;
+}
+
+.department h5:hover {
+    cursor: pointer;
+    border-bottom: solid black;
+}
+
+.baseFilter {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.catalog {
+    margin: 1%;
+}
+
+.catalog h3 {
+    font-weight: 500;
+    color: gray;
+    font-size: medium;
+    margin-bottom: 2%;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+}
+
