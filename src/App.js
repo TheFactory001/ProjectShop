@@ -7,10 +7,13 @@ import Footer from './components/Footer/Footer';
 import SignIn from './pages/SignIn';
 
 
+
 function App() {
   return (
     <div className="App">
-       <SignIn/>
+       <NavBar/>
+         <MarketBody/>
+         <Footer/>
     </div>
   );
 }
