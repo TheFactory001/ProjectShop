@@ -11,8 +11,8 @@ const BuyPage = () => {
         <div>
             <NavBar searchPlaceholder="Search departments" isAuth={authState}/>
             <div className='buyPane'>
+                <h3 className='exploreText'> Explore departments </h3>
                 <div className='topBuyPane'>
-                    <h3 className='exploreText'> Explore departments </h3>
                     <div className='departments'>
                         <h5> Clothing </h5>
                         <hr />
